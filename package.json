@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "react-dotenv": "^0.1.3"
+  },
+  "name": "job-board",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "start": "node backend/index.js",
+    "build": "npm install && npm install --prefix Placement-Board && npm run build --prefix Placement-Board"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

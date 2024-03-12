@@ -23,10 +23,10 @@ app.use("/", require("./routes/user").router);
 app.use("/", require("./routes/student").router)
 
 
-app.use(express.static(path.join(__dirname,"/frontend/dist")))
+app.use(express.static(path.join(__dirname,"/Placement-Board/build")))
 
 app.get("*",(req,res)=>{
-    res.sendFile(path.join(__dirname,"frontend","dist","index.html"))
+    res.sendFile(path.join(__dirname,"Placement-Board","build","index.html"))
 })
 
 

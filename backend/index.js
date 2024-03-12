@@ -9,12 +9,12 @@ const mongoDB = require("./db")
 // mongoDB();
 // import userRouter from "./routes/user.js";
 
-const PORT = 5000
+const PORT = process.env.PORT || 8000
 console.log( "my port",process.env.PORT)
 
 const app = express();
 
- __dirname = path.resolve();
+__dirname = path.resolve();
 
 app.use(express.json());
 app.use(express.urlencoded());
